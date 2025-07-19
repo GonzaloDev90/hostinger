@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  font-family: "Dm sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Header*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu-izq {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 15px;
+}
+
+.menu-izq img {
+  width: 147px;
+  height: 30px;
+}
+
+.menu-izq img:hover {
+  cursor: pointer;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  letter-spacing: 1px;
+  font-size: 16px;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Main*/
+
+.wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.titulo {
+  font-size: 36px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.color-text {
+  color: #673de6;
+}
+
+[class="bi bi-check2"] {
+  color: rgb(2, 198, 2);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+i::selection {
+  cursor: default;
+}
+
+.list-beneficios {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.precio {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.meses {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.botonera a {
+  font-weight: 900;
+  font-size: 18px;
+  padding: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+.botonera button:hover {
+  cursor: pointer;
+}
+
+.botonera {
+  display: flex;
+}
+
+.botonera button {
+  width: 200px;
+  background-color: #673de6;
+  color: white;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+#contador {
+  text-align: center;
+  background-color: #e2dbfc;
+  border-radius: 8px;
+  font-weight: 800;
+  padding: 12px;
+  width: 150px;
+  user-select: none;
+}
+
+#contador:hover {
+  cursor: default;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  text-align: center;
+}
