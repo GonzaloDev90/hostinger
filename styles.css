@@ -46,13 +46,13 @@
   color: black;
 }
 
-.menu-der{
+.menu-der {
   padding: 10px;
   display: flex;
   align-items: center;
 }
 
-.menu-der button{
+.menu-der button {
   border: solid 2px #000000;
   padding: 10px 20px;
   border-radius: 8px;
@@ -60,15 +60,15 @@
   background-color: white;
 }
 
-.menu-der a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    
+.menu-der a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+
 }
 
-.menu-der span{
+.menu-der span {
   font-size: 15px;
   margin-left: 10px;
   font-weight: bold;
@@ -163,6 +163,77 @@ i::selection {
 
 #contador:hover {
   cursor: default;
+}
+
+.beneficios {
+  background-color: #1f1346;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 700px;
+}
+
+
+.beneficios-titulo {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+
+.beneficios-titulo h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 36px;
+}
+
+.beneficios-titulo p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.beneficios-conteiner {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+
+.beneficios-recuadros {
+  background-color: #2f1c6a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  border-radius: 15px;
+  width: 360px;
+  height: 265px;
+ padding: 25px;
+ margin-bottom: 25px;
+}
+
+.mini-titulo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.beneficios button{
+  padding:15px;
+  border-radius: 10px;
+  width: 180px;
+  background-color: #673de6;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.beneficios a{
+  text-decoration: none;
+  color: white;
 }
 
 footer {
