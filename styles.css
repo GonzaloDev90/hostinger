@@ -169,6 +169,12 @@ input:focus-visible {
 }
 
 
+.main__lastText {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 
 /*---------------SECTION 2-------------------*/
 .main__section2 {
@@ -280,9 +286,95 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  height: 880px;
 }
 
+.main__section3 h2{
+  font-size: 36px;
+}
+
+.main__section3__cardsContainer {
+  display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.main__section3__card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(204, 204, 204);
+  border-radius: 10px;
+  width: 360px;
+  height: 330px;
+  padding: 20px;
+  justify-content: center;
+  text-align: start;
+}
+
+.main__section3__card__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__section3__card img {
+width: 60px;
+height: 60px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileName {
+  font-size: 16px;
+  color: #1d1e27;
+  font-weight: bold;
+}
+
+.profesion {
+  font-size: 14px;
+  color: #ab95af;
+}
+
+.imageStar img{
+  display: flex;
+  width: 120px;
+  height: 20px;
+  margin: 20px 0;
+}
+
+.profileText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileText a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #673de6;
+}
+
+.profileText p{
+  margin-bottom: 20px;
+}
+
+.main__section3 button{
+  border-color: #673de6;
+  border-radius: 5px;
+  border-style: solid 1px rgb(189, 48, 189);
+  padding: 20px 70px;
+  color: #673de6;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+}
 
 
 
