@@ -2,102 +2,163 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hostinger</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>1 Hostinger</title>
   </head>
 
   <body>
-    <header>
-      <div class="menu">
-        <div class="menu-izq">
-          <a href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
-          <nav>
-            <ul class="nav-bar">
-              <li><a href="#">Precios</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Explorar</a></li>
-              <li><a href="#">Soporte</a></li>
-              <li><a href="#">Horizon</a></li>
-            </ul>
-          </nav>
+
+    <header class="header">
+      <div class="header__logo">
+        <img src="./images/logo.png" class="header__img">
+      </div>
+      <div class="header__wrap gap35">
+        <div class="header__wrap__links gap35">
+          <a href="">Precios</a>
+          <a href="">Servicios<i class="bi bi-chevron-down"></i></a>
+          <a href="">Explorar<i class="bi bi-chevron-down"></i></a>
+          <a href="">Soporte<i class="bi bi-chevron-down"></i></a>
+          <a href="">Horizons</a>
         </div>
-        <div class="menu-der">
-          <img src="./images/argentina.png" alt="bandera" width="30" height="30" />
-          <span>Español</span>
-          <button><a href="">Mi Cuenta</a></button>
+        <div class="header__account">
+          <div class="header__account__lenguage">
+            <img class="header__account__img" src="./images/miniflag.png" alt="idioma">
+            <span class="header__account__span">Español</span>
+          </div>
+          <div>
+            <a class="header__account__button"><span>Mi cuenta</span></a>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="wrapp">
-        <aside class="izq">
-          <h1 class="titulo">Todo lo que necesitás para crear una web</h1>
-          <h2 class="subtitle">
-            Hasta un <span class="color-text">72%</span> off en hosting +
-            Creador de webs con IA
-          </h2>
-          <div>
-            <span class="list-beneficios"><i class="bi bi-check2"></i> Dominio gratis</span>
-            <span class="list-beneficios"><i class="bi bi-check2"></i> Migración gratis</span>
-            <span class="list-beneficios"><i class="bi bi-check2"></i> Atención al cliente 24/7</span>
-            <span>AR$ <span class="precio">3.899</span>/mes</span>
-            <p class="meses">+3 meses gratis</p>
+      <section class="main__section1">
+        <div class="main__section1__wrap separate">
+          <div class="main__section1__title separate">
+            <h1 class="separate">Buscá. Registrá.<br>Hacé realidad tu idea <span class="section1__titulo__span">.com</span></h1>
+            <h2>Encontrá tu dominio ideal y dale presencia en internet a tu marca, todo desde un solo lugar.</h2>
           </div>
-          <div class="botonera">
-            <button><a href="#">Empezar ya</a></button>
-            <div id="contador">00:18:16:00</div>
-          </div>
-        </aside>
-        <aside class="der">
-          <img src="./images/1.png" alt="publicidad" />
-        </aside>
-      </div>
-
-      <div class="beneficios">
-        <div class="beneficios-titulo">
-          <h2>Migración de sitios web simplificada</h2>
-          <p>¿Actualmente alojás tu sitio con otro proveedor? Unite a los más de 4 millones de propietarios de webs que
-            accedieron a un hosting rápido, seguro y confiable aquí en Hostinger. Nuestro equipo de expertos se puede
-            encargar de la migración mientras tu sitio permanece en funcionamiento en todo momento. Sí, leíste bien: sin
-            tiempo de inactividad, sin pérdida de datos y sin problemas.</p>
+          <form class="main__input separate">
+            <input class="main__input__text" type="text" name="" placeholder="Ingresá tu nombre de dominio">
+            <button class="main__input__button separate">Buscar dominios</button>
+          </form>
+          <span>Llevate un dominio gratis por un año con tu <a href="#">plan de hosting</a>.</span>
         </div>
+      </section>
 
-        <div class="beneficios-conteiner">
-          <div class="beneficios-recuadros">
+      <section class="main__section2">
+        <div>
+          <h2 class="main__section2__title separate">Rapidez. Confiabilidad. Eficiencia.</h2>
+          <p class="main__section2__subtitle separate">El más alto rendimiento y la mejor experiencia de usuario para tu audiencia.</p>
+        </div>
+        <div class="main__section2__cardsContainer">
+          
+          <div class="main__section2__card">
             <img src="" alt="">
-            <span class="mini-titulo">3 simples pasos</span>
-            <p>Solo tenés que elegir tu plan, completar el formulario de solicitud de migración y enviarlo. Eso es todo.
-            </p>
+            <span class="main__section2__card__title">Centros de datos locales.
+              En todo el mundo.</span>
+            <p>Tu sitio se va a conectar automáticamente al centro de datos más cercano en nuestra red global para mayor
+              eficiencia.</p>
           </div>
-
-          <div class="beneficios-recuadros">
+          <div class="main__section2__card">
             <img src="" alt="">
-            <span class="mini-titulo">Rápido y seguro</span>
-            <p>El 95% de las webs migran en menos de 20 minutos. El 5% restante, más rápido que el promedio del sector
-              ¡Y tu sitio web permanece activo todo el tiempo!</p>
+            <span class="main__section2__card__title">Velocidad máxima.
+              Sea cual sea el tráfico.</span>
+            <p>Menos tiempo de respuesta y carga rápida de páginas incluso durante los picos de tráfico.</p>
           </div>
-
-          <div class="beneficios-recuadros">
+          <div class="main__section2__card">
             <img src="" alt="">
-            <span class="mini-titulo">Gratis</span>
-            <p>No importa si tenés una web o 100, migrarlas a Hostinger es gratis con todos nuestros planes.</p>
+            <span class="main__section2__card__title">En vivo.
+              24/7.</span>
+            <p>Gracias a nuestra garantía de uptime del 99,9%, tu sitio web va a estar trabajando día y noche.</p>
           </div>
         </div>
-        <button><a href="">EMPEZAR</a></button>
-      </div>
+        <div>
+          <img src="./images/section2.png" alt="">
+          <h2>Seguridad completa. Confianza total.</h2>
+          <span><i class="bi bi-check2"></i>Protegé tus archivos con backups automáticos y doble factor de autenticación</span>
+          <span><i class="bi bi-check2"></i>Encriptá el tráfico de tu web con certificados SSL ilimitados</span>
+          <span><i class="bi bi-check2"></i>Obtené seguridad total contra ataques DDoS gracias a nameservers protegidos por Cloudflare</span>
+          <button>Empezar</button>
+        </div>
+      </section>
+
+      <section class="main__section3">
+        <h2>Más de 4 millones de dueños de webs en todo el mundo confían en nosotros</h2>
+      </section>
     </main>
 
     <footer>
-      <p>
-        © 2004-2025 Hostinger. Servicios de hosting web premium, cloud, VPS y
-        registro de dominios.
-      </p>
-      <p>Los precios se muestran sin IVA</p>
+      <div class="footer">
+        <div>
+          <div>
+            <span>HOSTING</span>
+            <ul>
+              <li><a href="#">Hosting Web</a></li>
+              <li><a href="#">Hosting para WordPress</a></li>
+              <li><a href="#">Hosting VPS</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <span>DOMINIO</span>
+            <ul>
+              <li><a href="#">Dominio gratis</a></li>
+              <li><a href="#">WHOIS</a></li>
+              <li><a href="#">Transferir dominio</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <span>HERRAMIENTAS</span>
+            <ul>
+              <li><a href="#">Creador de sitios web</a></li>
+              <li><a href="#">Creador de webs de ecommerce</a></li>
+              <li><a href="#">Migrar a Hostinger</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <span>INFORMACION</span>
+            <ul>
+              <li><a href="#">Precios</a></li>
+              <li><a href="#">Opiniones</a></li>
+              <li><a href="#">Programa de Afiliados</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <span>COMPAÑIA</span>
+            <ul>
+              <li><a href="#">Sobre Hostinger</a></li>
+              <li><a href="#">Nuestra Tecnologia</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <span>SOPORTE</span>
+            <ul>
+              <li><a href="#">Tutoriales</a></li>
+              <li><a href="#">Contactanos</a></li>
+              <li><a href="#">Reportar Abuso</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="lacaca">
+          <p>© 2004-2025 Hostinger. Subí tu proyecto a internet, hacelo crecer y superá tus metas gracias al poder de la
+            inteligencia artificial.
+            Los precios se muestran sin IVA</p>
+        </div>
+      </div>
     </footer>
+
   </body>
 
 </html>
