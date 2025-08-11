@@ -45,14 +45,9 @@ header {
   text-decoration: none;
   color: black;
   font-size: 16px;
-
-  i {
-    width: 24px;
-    height: 24px;
-  }
-
-  ;
 }
+
+
 
 .header__account {
   display: flex;
@@ -174,34 +169,100 @@ input:focus-visible {
   background-color: #1f1346;
   color: white;
   justify-content: center;
-  text-align: center;
-  padding: 100px 0 100px 0;
+  padding: 80px 0 80px 0;
+  gap: 20px;
+}
+
+.main__section2__title {
+  font-size: 36px;
+  word-spacing: 4px;
+  text-align: start;
+}
+
+.main__section2__subtitle {
+  font-size: 16px;
 }
 
 .main__section2__cardsContainer {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 25px;
+  margin-bottom: 100px;
 }
 
 .main__section2__card {
   display: flex;
   flex-direction: column;
   background-color: #2f1c6a;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 360px;
   height: 280px;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  padding: 30px;
+  gap: 15px;
 }
 
-.main__section2__title {
+
+.main__section2__card__title {
+font-size: 18px;
+font-weight: bold;
+word-spacing: 3px;
+}
+
+.main__section2__card p {
+  text-align: start;
+  word-spacing: 3px;
+}
+
+
+.main__section2__bottomContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.main__section2__textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 50vh;
+  gap: 40px;
+}
+
+.main__section2__textContainer h2{
   font-size: 36px;
 }
 
-.main__section2__subtitle {
-  font-size: 16px;
+.bi-check2{
+  margin-right: 10px;
 }
+
+.main__section2__checkAndSpan {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__section2__textContainer button{
+  width: 200px;
+  background-color: #673de6;
+  border-radius: 5px;
+  border-style: none;
+  height: 45px;
+  width: 150px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.main__section2__textContainer button:hover{
+  cursor: pointer;
+}
+
+
 
 
 
