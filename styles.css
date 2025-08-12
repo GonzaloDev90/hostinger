@@ -14,7 +14,7 @@ header {
   background-color: #cbc8ff;
   display: flex;
   flex-direction: row;
-  height: 88px;
+  max-height: 88px;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -97,7 +97,8 @@ header {
   justify-content: center;
   background-color: #cbc8ff;
   text-align: center;
-  height: 600px;
+  min-height: 1000px;
+  max-height: auto;
   line-height: 1.5;
   letter-spacing: 3px;
   padding-top: 12px;
@@ -107,7 +108,6 @@ header {
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
-  width: 1128px;
 }
 
 .main__section1 h1 {
@@ -132,7 +132,7 @@ header {
 }
 
 .main__input__text {
-  width: 618px;
+  min-width: 618px;
   height: 60px;
   border-radius: 5px;
   border-style: none;
@@ -151,13 +151,14 @@ input:focus-visible {
   background-color: #673de6;
   border-style: none;
   border-radius: 10px;
-  width: 162px;
+  max-width: 162px;
   height: 48px;
   top: 6px;
-  right: 260px;
+  right: 280px;
   position: absolute;
   cursor: pointer;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .main__input__button:hover {
@@ -289,7 +290,8 @@ input:focus-visible {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 880px;
+  min-height: 1000px;
+  max-height: auto;
 }
 
 .main__section3 h2{
@@ -307,8 +309,8 @@ input:focus-visible {
   flex-direction: column;
   border: solid 1px rgb(204, 204, 204);
   border-radius: 10px;
-  width: 360px;
-  height: 330px;
+  max-width: 360px;
+  max-height: 330px;
   padding: 20px;
   justify-content: center;
   text-align: start;
@@ -506,10 +508,110 @@ height: 60px;
   .header__logo {
     margin-left: 500px;
   }
+}
 
 
+@media (max-width: 1150px) {
+  .header__wrap {
+    padding: 20px;
+  }
+
+  .main__section2__cardsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main__section2__bottomContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .main__section3__cardsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__input__text {
+    width: 100%;
+  }
+
+  .main__input__button {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .main__section2__cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__section2__card {
+    width: 90%;
+  }
+
+  .main__section3__card {
+    width: 90%;
+  }
+
+  .footer_logos {
+    width: 90%;
+  }
+}
 
 
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header__logo {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-toggle {
+    margin: 10px 0;
+    font-size: 30px;
+  }
+
+  .main__section1 h1 {
+    font-size: 26px;
+  }
+
+  .main__section1 h2 {
+    font-size: 16px;
+  }
+
+  .main__input__text,
+  .main__input__button {
+    font-size: 14px;
+  }
+
+  .main__section2__textContainer h2 {
+    font-size: 24px;
+  }
+
+  .main__section3 h2 {
+    font-size: 22px;
+  }
+
+  .footer__registrer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
 
 /*---------------TOOLS-------------------*/
