@@ -502,6 +502,10 @@ input:focus-visible {
     padding: 20px;
   }
 
+    .main__input__text {
+    width: 85%;
+  }
+
   .main__section2__cardsContainer {
     flex-wrap: wrap;
     justify-content: center;
@@ -526,13 +530,15 @@ input:focus-visible {
 
 @media (max-width: 768px) {
   .main__input__text {
-    width: 100%;
+    width: 85%;
   }
 
   .main__input__button {
-    position: static;
+    position: absolute;
     margin-top: 10px;
     width: 100%;
+    top: -4px;
+    right: 9%;
   }
 
   .main__section2__cardsContainer {
