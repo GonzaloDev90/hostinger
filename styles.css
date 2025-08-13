@@ -9,7 +9,9 @@
   font-family: "DM Sans", sans-serif;
 }
 
-html, body {
+html,
+body,
+header {
   overflow-x: hidden;
 }
 
@@ -18,7 +20,7 @@ header {
   background-color: #cbc8ff;
   display: flex;
   flex-direction: row;
-  max-height: 88px;
+  min-height: 88px;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -297,14 +299,14 @@ input:focus-visible {
   max-height: auto;
 }
 
-.main__section3 h2{
+.main__section3 h2 {
   font-size: 36px;
 }
 
 .main__section3__cardsContainer {
   display: flex;
-    gap: 25px;
-    margin-top: 35px;
+  gap: 25px;
+  margin-top: 35px;
 }
 
 .main__section3__card {
@@ -326,8 +328,8 @@ input:focus-visible {
 }
 
 .main__section3__card img {
-width: 60px;
-height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .profile {
@@ -346,7 +348,7 @@ height: 60px;
   color: #ab95af;
 }
 
-.imageStar img{
+.imageStar img {
   display: flex;
   width: 120px;
   height: 20px;
@@ -359,18 +361,18 @@ height: 60px;
   justify-content: center;
 }
 
-.profileText a{
+.profileText a {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   color: #673de6;
 }
 
-.profileText p{
+.profileText p {
   margin-bottom: 20px;
 }
 
-.main__section3 button{
+.main__section3 button {
   border-color: #673de6;
   border-radius: 5px;
   border-style: solid 1px rgb(189, 48, 189);
@@ -399,26 +401,26 @@ height: 60px;
   gap: 50px;
 }
 
-.footer_container li{
+.footer_container li {
   list-style: none;
 }
 
-.footer_container a{
+.footer_container a {
   color: black;
   text-decoration: none;
 }
 
-.footer_container a:hover{
+.footer_container a:hover {
   color: rgb(128, 6, 209);
 }
 
 
-.footer_container span{
+.footer_container span {
   font-weight: bold;
   font-size: 16px;
 }
 
-.footer_container li{
+.footer_container li {
   margin: 10px 0;
   font-size: 14px;
 }
@@ -431,13 +433,13 @@ height: 60px;
 }
 
 .footer__up {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.footer__down{
+.footer__down {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -446,23 +448,23 @@ height: 60px;
 }
 
 
-.footer__mediosDePago{
+.footer__mediosDePago {
   display: flex;
   flex-direction: row;
 }
 
-.footer__politicas{
+.footer__politicas {
   font-size: 14px;
 }
 
-.footer__registrer{
+.footer__registrer {
   display: flex;
   flex-direction: row;
   gap: 20px;
   font-size: 14px;
 }
 
-.section4{
+.section4 {
   background-color: #8c85ff;
   height: 1px;
 }
@@ -567,7 +569,6 @@ height: 60px;
 
 @media (max-width: 480px) {
   header {
-    flex-wrap: wrap;
     height: auto;
     padding: 10px;
   }
@@ -593,7 +594,7 @@ height: 60px;
   }
 
   .main__input__text {
-    width: 100%;
+    width: 90%;
   }
 
   .main__input__button {
@@ -612,6 +613,14 @@ height: 60px;
     flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+
+  .menu-toggle {
+    margin-right: 50%;
+  }
+
+  .header__logo {
+    margin-left: 50%;
   }
 }
 
