@@ -462,34 +462,18 @@ height: 60px;
   font-size: 14px;
 }
 
-
 .section4{
   background-color: #8c85ff;
   height: 1px;
-}
-
-
-
-
-
-
-
-
-/*---------------MEDIA-------------------*/
-
-
-/*---------------TOOLS-------------------*/
-
-.separate {
-  margin-bottom: 40px;
 }
 
 .menu-toggle {
   display: none;
 }
 
+
 /*---------------MEDIA QUERY-------------------*/
-@media (max-width:1100px) {
+@media (max-width:1032px) {
   .header__wrap__links {
     display: none;
   }
@@ -511,10 +495,7 @@ height: 60px;
   .header__logo {
     margin-left: 50%;
   }
-}
 
-
-@media (max-width: 1150px) {
   .header__wrap {
     padding: 20px;
   }
@@ -543,7 +524,7 @@ height: 60px;
 
 @media (max-width: 768px) {
   .main__input__text {
-    width: 90%;
+    width: 100%;
   }
 
   .main__input__button {
