@@ -38,6 +38,7 @@ header {
   display: flex;
   justify-content: end;
   cursor: pointer;
+  padding-left: 20px;
 }
 
 .header__wrap__links {
@@ -140,8 +141,6 @@ header {
   border-style: none;
   padding: 11px 14px;
   font-size: 15px;
-  box-sizing: border-box; 
-  flex: 1;
 }
 
 input:focus-visible {
@@ -158,12 +157,11 @@ input:focus-visible {
   max-width: 162px;
   height: 48px;
   top: 6px;
-  right: 280px;
+  right: 24%;
   position: absolute;
   cursor: pointer;
   flex-wrap: wrap;
   padding: 10px;
-  flex-shrink: 0;
 }
 
 .main__input__button:hover {
@@ -545,7 +543,7 @@ height: 60px;
 
 @media (max-width: 768px) {
   .main__input__text {
-    width: 80%;
+    width: 90%;
   }
 
   .main__input__button {
@@ -573,6 +571,15 @@ height: 60px;
 
   .main__section2 img {
     max-width: 500px;
+  }
+
+  .footer__down {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__down img {
+    width: 450px;
   }
 }
 
