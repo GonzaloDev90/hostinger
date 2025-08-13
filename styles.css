@@ -156,7 +156,7 @@ input:focus-visible {
   background-color: #673de6;
   border-style: none;
   border-radius: 10px;
-  max-width: 162px;
+  width: 178px;
   height: 48px;
   top: 6px;
   right: 24%;
@@ -506,6 +506,13 @@ input:focus-visible {
     width: 85%;
   }
 
+    .main__input__button {
+    position: absolute;
+    margin-top: 10px;
+    top: -4px;
+    right: 20%;
+  }
+
   .main__section2__cardsContainer {
     flex-wrap: wrap;
     justify-content: center;
@@ -536,7 +543,7 @@ input:focus-visible {
   .main__input__button {
     position: absolute;
     margin-top: 10px;
-    width: 100%;
+
     top: -4px;
     right: 9%;
   }
@@ -603,9 +610,6 @@ input:focus-visible {
     width: 90%;
   }
 
-  .main__input__button {
-    font-size: 14px;
-  }
 
   .main__section2__textContainer h2 {
     font-size: 24px;
