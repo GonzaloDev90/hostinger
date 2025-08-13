@@ -543,9 +543,8 @@ input:focus-visible {
   .main__input__button {
     position: absolute;
     margin-top: 10px;
-
     top: -4px;
-    right: 9%;
+    right: 10%;
   }
 
   .main__section2__cardsContainer {
@@ -610,6 +609,18 @@ input:focus-visible {
     width: 90%;
   }
 
+    .main__input__button {
+    position: absolute;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 30%;
+    top: -4px;
+    right: 6%;
+  }
+
+  .main__section2 img {
+    max-width: 400px;
+  }
 
   .main__section2__textContainer h2 {
     font-size: 24px;
@@ -631,6 +642,10 @@ input:focus-visible {
 
   .header__logo {
     margin-left: 50%;
+  }
+
+    .footer__down img {
+    width: 400px;
   }
 }
 
