@@ -9,6 +9,10 @@
   font-family: "DM Sans", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /*---------------HEADER-------------------*/
 header {
   background-color: #cbc8ff;
@@ -33,7 +37,6 @@ header {
 .header__logo {
   display: flex;
   justify-content: end;
-  width: 200px;
   cursor: pointer;
 }
 
@@ -98,14 +101,11 @@ header {
   background-color: #cbc8ff;
   text-align: center;
   min-height: 1000px;
-  max-height: auto;
-  line-height: 1.5;
   letter-spacing: 3px;
   padding-top: 12px;
 }
 
 .main__section1__wrap {
-  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
 }
@@ -131,13 +131,17 @@ header {
   display: inline-block;
 }
 
+
 .main__input__text {
-  min-width: 618px;
+  width: 100%;
+  max-width: 618px;
   height: 60px;
   border-radius: 5px;
   border-style: none;
   padding: 11px 14px;
   font-size: 15px;
+  box-sizing: border-box; 
+  flex: 1;
 }
 
 input:focus-visible {
@@ -159,6 +163,7 @@ input:focus-visible {
   cursor: pointer;
   flex-wrap: wrap;
   padding: 10px;
+  flex-shrink: 0;
 }
 
 .main__input__button:hover {
@@ -502,11 +507,11 @@ height: 60px;
     border-style: none;
     display: flex;
     cursor: pointer;
-    margin-right: 500px;
+    margin-right: 50%;
   }
 
   .header__logo {
-    margin-left: 500px;
+    margin-left: 50%;
   }
 }
 
@@ -540,7 +545,7 @@ height: 60px;
 
 @media (max-width: 768px) {
   .main__input__text {
-    width: 100%;
+    width: 80%;
   }
 
   .main__input__button {
@@ -565,6 +570,10 @@ height: 60px;
   .footer_logos {
     width: 90%;
   }
+
+  .main__section2 img {
+    max-width: 500px;
+  }
 }
 
 
@@ -586,6 +595,7 @@ height: 60px;
     font-size: 30px;
   }
 
+
   .main__section1 h1 {
     font-size: 26px;
   }
@@ -594,7 +604,10 @@ height: 60px;
     font-size: 16px;
   }
 
-  .main__input__text,
+  .main__input__text {
+    width: 100%;
+  }
+
   .main__input__button {
     font-size: 14px;
   }
